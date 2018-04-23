@@ -9,3 +9,4 @@ OUTPUT(ds, NAMED('MessageSample'));
 OUTPUT(COUNT(ds), NAMED('MessageCount'));
 OUTPUT(offsets, NAMED('LastMessageOffsets'));
 OUTPUT(partitionCount, NAMED('PartitionCount'));
+OUTPUT(ds,NAMED('DAtaset'));
