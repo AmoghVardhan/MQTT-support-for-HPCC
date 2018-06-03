@@ -33,7 +33,16 @@ until finished
 End with an example of getting some data out of the system or using it for a little demo
 
 ## System design
-
+<img src="model.png" alt ="system design model">
+The proposed working system design is as shown in figure. Our system consists of the following components :-
+<ul>
+<li>Sensors</li>
+<li>MQTT broker</li>
+<li>Middleware client for requests</li>
+<li>Queue</li
+<li>Query generator</li>
+<li>Kafka cluster</li>
+<li>HPCC cluster</li>
 
 ### Break down into end to end tests
 
