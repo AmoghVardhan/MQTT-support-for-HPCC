@@ -31,7 +31,7 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
-##Commands
+## Commands
 Kafka : -
 1. To start kafka:- sudo /usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties
 
