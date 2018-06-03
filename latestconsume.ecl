@@ -24,10 +24,11 @@ consumeMessages(STRING currentTime) := FUNCTION
     STD.File.AddSuperFile(SUPERFILE_RAWDATA, currentfileName),
     STD.File.FinishSuperFileTransaction()
     );
-    DECIMAL5_2 Ads:=4;
-    wasteAction := OUTPUT(ds, ,currentfileName);
+    //DECIMAL5_2 Ads:=4;
+    //wasteAction := OUTPUT(ds, ,currentfileName);
     outputAndAddToSuperfile := SEQUENTIAL(outputfile, AddToSuperFile);
-    consumeMessages := IF(TRUE  , outputAndAddToSuperfile,wasteAction);
+    //consumeMessages := IF(TRUE, outputAndAddToSuperfile,wasteAction);
+    consumeMessages := IF(TRUE, outputAndAddToSuperfile);
     return consumeMessages;
 END;
 /* Create superfiles */
