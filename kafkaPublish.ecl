@@ -13,16 +13,11 @@ END;
 // Query Parameters
 ROW messageRow := ROW([], Raw_Layout) : STORED ('Message', FEW);
 
-// Grab a beginning timestamp
-//startTimeStamp := Std.Date.CurrentTimestamp(FALSE) : INDEPENDENT;
-
-// Combine timestamp with incoming data into a new record
-//headerAndData := IoT_Site.DataLayouts.MakeParsedLayoutRow(startTimeStamp, messageRow);
-
 // Convert record to JSON-formatted string
 headerAndDataJSON := '{' + TOJSON(messageRow) + '}';
 
-// Send incoming data to Kafka
+// Send incoming data to Kafka using the Kafka IP and the TOPIC
+//To prove the data has reached until the ROXIE
 kafkaIncomingDataModule := kafka.KafkaPublisher
     (
         'TestTopic',
