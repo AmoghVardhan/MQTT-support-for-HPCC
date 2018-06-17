@@ -1,6 +1,6 @@
 # MQTT-support-for-HPCC
 
-One Paragraph of project description goes here
+A plugin to support MQTT protocol (A lightweight IOT protocol) in HPCC system’s architecture.
 
 ## Getting Started
 
