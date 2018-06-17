@@ -4,11 +4,21 @@ One Paragraph of project description goes here
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Clone the files into your system. Complete all the required installations as mentioned below. 
+Run the following in seperate terminals:
+1. sudo /etc/init.d/hpcc-init start
+2. mosquitto -v
+3. sudo /usr/local/kafka/bin/kafka-server-start.sh /usr/local/kafka/config/server.properties
+4. ecl publish roxie kafkaPublish.ecl
+5. ecl run latestconsume.ecl (once cursor goes to next line, press ctrl-c)
+6. python Client.py
+7. python middlewareClient.py
+8. python querygenerator.py
+9. Go to localhost:8010 to see ECL watch. Under the landing zone you'll be able to see the data being collected as a file after every x min.
 
 ### Installing
 
-* [HPCC CLUSTER](https://hpccsystems.com/training/documentation/installation-and-administration) - Enviroment for running
+* [HPCC CLUSTER](https://hpccsystems.com/training/documentation/installation-and-administration) - Enviroment for running (Download platform for ubuntu and install kafka plugin too)
 * [KAFKA](https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-14-04) - Installing Kafka
 * [MQTT BROKER](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-16-04) - Installing MQTT BROKER
 
