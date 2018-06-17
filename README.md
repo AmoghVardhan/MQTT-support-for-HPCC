@@ -6,30 +6,11 @@ One Paragraph of project description goes here
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Installing
 
 * [HPCC CLUSTER](https://hpccsystems.com/training/documentation/installation-and-administration) - Enviroment for running
 * [KAFKA](https://www.digitalocean.com/community/tutorials/how-to-install-apache-kafka-on-ubuntu-14-04) - Installing Kafka
 * [MQTT BROKER](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-16-04) - Installing MQTT BROKER
-
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Commands
 Kafka : -
@@ -93,7 +74,7 @@ The kafka cluster is now filled with data received from the query generator. Onc
 The HPCC cluster now has the data of a particular application under one superfile which is made up of many subfiles. At the time of analysis, the data from these subfiles are considered as one unit. Analysis results can be used for predicting, future parameters using appropriate machine learning algorithms.
 
 
-
+<!-- 
 ### Break down into end to end tests
 
 Explain what these tests test and why
@@ -142,4 +123,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Hat tip to anyone who's code was used
 * Inspiration
-* etc
+* etc -->
