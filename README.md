@@ -69,7 +69,7 @@ The middleware client is subscribed to all the topics. Thus, if a new sensor is 
 
 <b>Queue</b>
 
-A queue between the two processes is needed because of the type protocols used. MQTT is a stateful protocol where as Roxie is stateless. To bridge these two, an external datastore is required and a fifo queue is the best choice for the discussed application.
+A queue between the two processes is needed because of the type of protocols used. MQTT is a stateful protocol where as Roxie is stateless. To bridge these two, an external datastore is required and a fifo queue is the best choice for the discussed application.
 
 <b>Query generator</b>
 
